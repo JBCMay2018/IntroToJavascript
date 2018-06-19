@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a short introduction to Javascript</title>
+</head>
+<body>
+	<p>The basics: Set up your functions to work. You are already familiar with functions from Java. All you need now is to know how to use functions and variables in Javascript.</p>
+	<p>You can write your javascript within a page (usually at the bottom). You load the script at the bottom so that all of the HTML renders before the javascript is included - this makes your page load just a bit faster.</p>
+	<h3>Adding functions</h3>
+	<p>Your functions are really easy to define. Just say <strong>function</strong> where you need to, add the name and the parameters to pass, and then you can define your function. It's  A LOT LIKE JAVA! </p>
+	<p>Next: Call your functions from your HTML page. Aaaand you're done.</p>
+
+	<!-- Below are two HTML elements - a text box for input, and a button to call events -->
+
+	<input type="number" id="numericvalue">
+
+	 <button onclick="otherFunction()">Click Me!</button>
+	<!--This is an HTML comment. You can create it by pressing CTRL + / in your IDE or automated text editor -->
+
+	<script type="text/javascript">
+		//This is how you put a Javascript comment in the code. It is good practice to indicate the type of the text you are including, but you can also omit this, because Javascript is the default scripting language used with HTML files.
+
+		// Define your function as shown below: 
+		function myFunction()
+		{
+			// This function shows the information entered into a text box in an alert.
+			//After the number has been entered, convert the value into Fahrenheit and display it in an alert. 
+
+			//Done already? Display the value in a styled H1 element (bold, green, using a Google Font) on the HTML page. 
+
+			// And THEN.... create a function called convertTemp. This function should convert the value entered in the text box from Celsius to Fahrenheit. 
+		}
+
+		function otherFunction()
+		{
+			// This function shows the information entered into a text box in an HTML element 
+			// You can create variables in Javascript functions, and use them to perform operations. For example, this 
+			//function calculates the APPROXIMATE number of days in a given number of years.
+			var enteredNumber = document.getElementById("numericvalue").value;
+			var displayedNumber = enteredNumber * 365; 
+			alert(displayedNumber); 
+		}
+	</script>
+</body>
+</html>
